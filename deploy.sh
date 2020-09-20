@@ -1,6 +1,6 @@
-docker build -t dunphyal/multi-client:latest -t dunphyal/mutli-client:$SHA -f ./client/Dockerfile ./client
-docker build -t dunphyal/multi-server:latest -t dunphyal/mutli-server:$SHA -f ./server/Dockerfile ./server
-docker build -t dunphyal/mutli-worker:latest -t dunphyal/mutli-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t dunphyal/multi-client:latest -t dunphyal/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t dunphyal/multi-server:latest -t dunphyal/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t dunphyal/multi-worker:latest -t dunphyal/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push dunphyal/multi-client:latest   
 docker push dunphyal/mutli-server:latest
