@@ -3,11 +3,11 @@ docker build -t dunphyal/multi-server:latest -t dunphyal/multi-server:$SHA -f ./
 docker build -t dunphyal/multi-worker:latest -t dunphyal/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push dunphyal/multi-client:latest   
-docker push dunphyal/mutli-server:latest
+docker push dunphyal/multi-server:latest
 docker push dunphyal/multi-worker:latest
 
 docker push dunphyal/multi-client:$SHA
-docker push dunphyal/mutli-server:$SHA
+docker push dunphyal/multi-server:$SHA
 docker push dunphyal/multi-worker:$SHA
 
 kubectl apply -f k8s
